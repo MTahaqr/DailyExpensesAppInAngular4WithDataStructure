@@ -1,0 +1,37 @@
+<div>
+<mat-card>
+<table class="table">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Date</th>
+      <th>Day</th>      
+      <th>Category</th>
+      <th>Price</th>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let aEL of allExpList; let i= index '>
+      <td>{{i+1}}</td>
+      <td>{{aEL.Date}}</td>
+      <td>{{aEL.Day}}</td>      
+      <td>{{aEL.exp}}</td>
+      <td>{{aEL.price}}</td>
+      <td id="del" (click)='deleteExpense(i,aEL.exp)'><i class="fa fa-trash-o"  aria-hidden="true"></i></td>
+    </tr>
+    <tr >
+      <td></td>
+      <td></td>      
+      <td colspan='2' id='total'>
+      <span class='lastCol'  >Total </span>
+      </td>
+      <td>
+        <span class='lastCol'>{{this.dailyExpDataService.totalExp}}</span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</mat-card>
+</div>

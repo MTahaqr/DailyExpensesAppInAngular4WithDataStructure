@@ -1,0 +1,19 @@
+div{
+    display: block;
+}
+mat-card{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+mat-form-field{
+    width: 100%;
+    
+}
+.fa{
+    float: right;
+    margin-right: 15px;
+}
+.fa:hover{
+    cursor: pointer;
+}

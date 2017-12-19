@@ -1,0 +1,40 @@
+<div>
+  <mat-card>
+    <mat-form-field class="example-full-width" >
+      <input matInput type="text" placeholder="Enter Expense to search" name='exp' [(ngModel)]='exp'>
+      <i (click)='search()' class="fa fa-search" aria-hidden="true"></i>
+      
+    </mat-form-field>
+    <table class="table">
+      <thead>
+        <tr>
+          <td></td>
+          <td><b>Expense :</b></td>
+          <td>{{this.expDoubleLinkList.searchOBj.exp}}</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td><b>Price :</b></td>
+          <td>{{this.expDoubleLinkList.searchOBj.price}}</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><b>Date :</b></td>
+          <td>{{this.expDoubleLinkList.searchOBj.Date}}</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><b>Day :</b></td>
+          <td>{{this.expDoubleLinkList.searchOBj.Day}}</td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </mat-card>
+</div>

@@ -1,0 +1,36 @@
+<div>
+  <mat-card>
+    <table class="table">
+      <thead>
+
+        <tr>
+          <td></td>
+          <td><b>Expense :</b></td>
+          <td>{{this.expDoubleLinkList.expOBj.exp}}</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <i (click)='backward()' class="fa fa-arrow-left" aria-hidden="true"></i></td>
+          <td><b>Price :</b></td>
+          <td>{{this.expDoubleLinkList.expOBj.price}}</td>
+          <td><i (click)='forward()' class="fa fa-arrow-right" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><b>Date :</b></td>
+          <td>{{this.expDoubleLinkList.expOBj.Date}}</td>
+          <td></td>
+        </tr>
+        <tr>
+        <td></td>          
+          <td><b>Day :</b></td>
+          <td>{{this.expDoubleLinkList.expOBj.Day}}</td>
+          <td></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </mat-card>
+</div>

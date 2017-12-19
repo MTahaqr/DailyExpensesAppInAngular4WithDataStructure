@@ -1,0 +1,17 @@
+div{
+    display: block;
+}
+mat-card{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.fa:hover{
+      cursor: pointer;
+    color: #3F51B5;
+
+}
+.fa{
+    font-size: 30px;
+
+}
